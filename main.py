@@ -171,7 +171,7 @@ def withdraw(userWithValue, welcomeScreen, wCustomEntry, balanceLabel):
             customAmount = temp[1]
 
         if not customAmount.isnumeric():
-            messagebox.showerror('Error', 'Invalid Deposit Value.')
+            messagebox.showerror('Error', 'Invalid Withdraw Value.')
         intBal = int(userInformation[id]["balance"])
         intBal -= int(customAmount)
         if intBal < 0:
